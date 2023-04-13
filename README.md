@@ -9,14 +9,14 @@ This shell will be compiled this way
 - gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 
 ## Testing
-- The shell would work like this in interactive model: <br />
+### The shell would work like this in interactive model: <br />
    $ ./hsh <br />
   ($) /bin/ls <br />
    hsh main.c shell.c <br />
   ($) <br />
   ($) exit <br />
    $ <br />
-- But also in non-interactive mode: <br />
+### But also in non-interactive mode: <br />
   $ echo "/bin/ls" | ./hsh <br />
   hsh main.c shell.c test_ls_2 <br />
   $ <br />
