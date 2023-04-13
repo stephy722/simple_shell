@@ -1,14 +1,14 @@
-#Simple Shell
+# Simple Shell
 This is a simple shell that executes commands and follows
 the betty style guide. This shell program can be used to execute
 standard commands such as rm and ls
 
-##Compilation
+## Compilation
 This shell will be compiled this way
 
 - gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 
-##Testing
+## Testing
 The shell would work like this in interactive model:
    $ ./hsh
   ($) /bin/ls
@@ -29,7 +29,7 @@ But also in non-interactive mode:
   hsh main.c shell.c test_ls_2
   $
 
-##Authors
+## Authors
 
 Loise Muthoni Muthoni
 Erick Ngugi
