@@ -10,27 +10,27 @@ This shell will be compiled this way
 
 ## Testing
 The shell would work like this in interactive model:
-   $ ./hsh
-  ($) /bin/ls
-   hsh main.c shell.c
-  ($)
-  ($) exit
-   $
-But also in non-interactive mode:
-  $ echo "/bin/ls" | ./hsh
-  hsh main.c shell.c test_ls_2
-  $
-  $ cat test_ls_2
-  /bin/ls
-  /bin/ls
-  $
-  $ cat test_ls_2 | ./hsh
-  hsh main.c shell.c test_ls_2
-  hsh main.c shell.c test_ls_2
-  $
+   $ ./hsh <br />
+  ($) /bin/ls <br />
+   hsh main.c shell.c <br />
+  ($) <br />
+  ($) exit <br />
+   $ <br />
+But also in non-interactive mode: <br />
+  $ echo "/bin/ls" | ./hsh <br />
+  hsh main.c shell.c test_ls_2 <br />
+  $ <br />
+  $ cat test_ls_2 <br />
+  /bin/ls <br />
+  /bin/ls <br />
+  $ <br />
+  $ cat test_ls_2 | ./hsh <br />
+  hsh main.c shell.c test_ls_2 <br />
+  hsh main.c shell.c test_ls_2 <br />
+  $ <br />
 
 ## Authors
 
-Loise Muthoni Muthoni
-Erick Ngugi
+Loise Muthoni Muthoni <br />
+Erick Ngugi <br />
 
