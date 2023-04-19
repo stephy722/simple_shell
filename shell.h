@@ -33,8 +33,8 @@ typedef struct Alias{
 	struct Alias *next;
 } alias;
 
-extern char *shell_name;
-extern int line_num;
+extern char *sname;
+extern int line_number;
 extern int status;
 extern char **environ;
 int command_manager(char **args);
@@ -63,11 +63,9 @@ int execute_command(char **args);
 char *input_san(char *oldbuf, size_t *old_size);
 int input_err_check(char *ptr);
 void err_message(char *arg0, char arg1);
-void *realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 int _getline(char **line_ptr, size_t *n, int file);
 char *check_for_vars(char *arg);
 int _strlen(char *str);
-char *strdup(char *src);
 char *str_concat(char *s1, char *s2);
 
 #endif

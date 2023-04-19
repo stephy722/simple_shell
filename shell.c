@@ -16,7 +16,7 @@ int main(__attribute__((unused))int ac, char **av)
 	char *buffer = NULL, *buffer_ptr, *buffer_tmp;
 	char **arguments = NULL;
 
-	shell_name = _strdup(*av);
+	sname = strdup(*av);
 
 	environ = array_cpy(environ, list_len(environ, NULL));
 
@@ -55,7 +55,7 @@ int main(__attribute__((unused))int ac, char **av)
 			buffer_ptr = buffer_tmp;
 
 		buffer_tmp = NULL;
-		args = make_array(buffer_ptr, ' ', &buffer_tmp);
+		arguments = make_array(buffer_ptr, ' ', &buffer_tmp);
 		if (buffer_tmp != NULL)
 			separated = TRUE;
 		else
@@ -66,7 +66,7 @@ int main(__attribute__((unused))int ac, char **av)
 		free(arguments);
 
 		if (separated == FALSE)
-			line_number;
+			line_number++;
 
 		if (a == EXIT_SHELL)
 			break;
