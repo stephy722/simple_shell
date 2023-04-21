@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <time.h>
 #include <sys/types.h>
 #include <string.h>
 #include <sys/stat.h>
@@ -65,7 +66,22 @@ int input_err_check(char *ptr);
 void err_message(char *arg0, char arg1);
 int _getline(char **line_ptr, size_t *n, int file);
 char *check_for_vars(char *arg);
-int _strlen(char *str);
+int _strcmp(char *str1, char *str2);
+int verify_path(char **arguments);
+char *_strdup(char *str);
+char *append_command(char *dir_path, char *command);
+int exec(char **arguments);
+int fill_args(char *entry, char **arguements);
+int print_numbers(int n);
+int _strlen(const char *string);
+int print_not_found(char **arguements, int counter);
+char *_getenv(char *global_var);
+int _printp(const char *prompt, unsigned int size);
+int _putchar(char c);
+int exist(char *pathname);
+void free_grid(char **grid, int height);
+void last_free(char *entry);
+int verify_blt(char **arguements, int exit_stat);
 char *str_concat(char *s1, char *s2);
 
 #endif
