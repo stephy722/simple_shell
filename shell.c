@@ -1,15 +1,12 @@
 #include "shell.h"
 
-/**int line_number = 1, status = 0;
-char *sname = NULL;
-
-
+/*
+ * int line_number = 1, status = 0;
+ * char *sname = NULL;
  * main - main is used to execute commands
  * @ac: these are the number of inputs
- * @v: array of inputs
+ * array of input
  * Return: 0, or anothe rnumber
- 
-int main(__attribute__((unused))int ac, char **av)
 {
 	int read_bytes, separated = FALSE, a;
 	size_t buffer_size = 1;
@@ -77,15 +74,16 @@ int main(__attribute__((unused))int ac, char **av)
 	free(sname);
 
 	return (status % 256);
-}*/
+}
 #include "shell.h"
+*/
 /**
  * main - This is the shell.c file for our project
  * Return:Return 0 if success
  */
 int main(void)
 {
-	ssize_t bytes_rd = 0; 
+	ssize_t bytes_rd = 0;
 	size_t bf_size = 0;
 	char *entry = NULL, *arguments[20];
 	int counter = 1, vf_stat = 0, exist_stat = 0, exit_stat = 0, blt_stat = 0;

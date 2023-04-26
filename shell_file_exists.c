@@ -1,6 +1,7 @@
 #include "shell.h"
+
 /**
- * exist - This checks if a file exists 
+ * exist - This checks if a file exists
  * @pathname: path
  * Return: retuns 0 if file exists
  */
