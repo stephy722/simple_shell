@@ -34,7 +34,7 @@ char *append_command(char *dir_path, char *command)
 		command_path[a + b] = command[b];
 		b++;
 	}
-i
+
 	command_path[a + b] = '\0';
 
 	return (command_path);
